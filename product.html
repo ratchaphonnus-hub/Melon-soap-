@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collection — Melon Soap</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .filter-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.85rem;
+      margin-bottom: var(--space-lg);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="brand-logo">Melon Soap</a>
+      <ul class="nav-links">
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="product.html">สินค้าทั้งหมด</a></li>
+        <li><a href="order.html">สั่งซื้อ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Collection Section -->
+  <main class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">The Collection</span>
+        <h1>คอลเลกชันผลิตภัณฑ์ทั้งหมด</h1>
+      </div>
+
+      <!-- Filter Bar (Managed by script.js) -->
+      <div id="filter-bar" class="filter-wrapper"></div>
+
+      <!-- Product Grid (Rendered by script.js from products.json) -->
+      <div id="product-list" class="product-grid"></div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-brand">Melon Soap</div>
+      <p class="footer-note">&copy; 2026 Melon Soap. Minimalist Botanical Care.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

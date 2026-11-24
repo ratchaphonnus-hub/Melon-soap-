@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Melon Soap — Botanical Body & Facial Care</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Page-specific refinements for full-bleed luxury hero & 4-mood grid */
+    .hero-full {
+      min-height: calc(100vh - 82px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 4rem 0;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .hero-inner {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    .hero-eyebrow {
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.28em;
+      color: var(--accent-muted-sage);
+      margin-bottom: 1.75rem;
+    }
+
+    .hero-headline {
+      font-family: var(--font-serif);
+      font-size: clamp(2.75rem, 6vw, 4.75rem);
+      font-weight: 400;
+      line-height: 1.15;
+      color: var(--text-primary);
+      margin-bottom: 1.75rem;
+    }
+
+    .hero-subcopy {
+      max-width: 540px;
+      margin: 0 auto 3rem;
+      font-size: 1rem;
+      color: var(--text-secondary);
+      line-height: 1.85;
+    }
+
+    .mood-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+    }
+
+    .mood-card {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      padding: 2.75rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: var(--transition-smooth);
+    }
+
+    .mood-card:hover {
+      border-color: var(--border-dark);
+      transform: translateY(-4px);
+    }
+
+    .mood-card-top {
+      margin-bottom: 2.5rem;
+    }
+
+    .mood-card-header {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding-bottom: 0.6rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .mood-card-title {
+      font-family: var(--font-serif);
+      font-size: 1.75rem;
+      color: var(--text-primary);
+    }
+
+    .mood-card-desc {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      line-height: 1.75;
+    }
+
+    .mood-card-link {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--accent-deep-green);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    @media (max-width: 992px) {
+      .mood-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .mood-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-full {
+        min-height: 82vh;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="brand-logo">Melon Soap</a>
+      <ul class="nav-links">
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="product.html">สินค้าทั้งหมด</a></li>
+        <li><a href="order.html">สั่งซื้อ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Full-Screen Luxury Minimalist Hero Section -->
+  <header class="hero-full">
+    <div class="container">
+      <div class="hero-inner">
+        <span class="hero-eyebrow">Botanical Essence &bull; Crafted in Small Batches</span>
+        <h1 class="hero-headline">สัมผัสความบริสุทธิ์แห่งกลิ่นหอมที่โอบกอดผิวอย่างละเมียดละไม</h1>
+        <p class="hero-subcopy">
+          รังสรรค์จากสารสกัดเมล่อนธรรมชาติและพฤกษพรรณคัดพิเศษ เพื่อมอบช่วงเวลาแห่งการดูแลผิวที่เรียบง่าย สงบ และเปี่ยมด้วยเอกลักษณ์เฉพาะตัว
+        </p>
+        <a href="product.html" class="btn">ดูสินค้าทั้งหมด</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 4 Moods Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Curated Scent &amp; Care</span>
+        <h2>เลือกสัมผัสตามอารมณ์ของคุณ</h2>
+      </div>
+
+      <div class="mood-grid">
+        <!-- Mood 1: Fresh -->
+        <a href="product.html?mood=fresh" class="mood-card mood-fresh">
+          <div class="mood-card-top">
+            <div class="mood-card-header mood-underline">
+              <span class="mood-dot"></span>
+              <h3 class="mood-card-title">Fresh</h3>
+            </div>
+            <p class="mood-card-desc">ความสดชื่นโปร่งสบายดุจหยดน้ำค้างยามเช้า คืนความมีชีวิตชีวาและสะอาดบริสุทธิ์ให้ผิว</p>
+          </div>
+          <span class="mood-card-link">สำรวจกลิ่น Fresh &rarr;</span>
+        </a>
+
+        <!-- Mood 2: Sweet -->
+        <a href="product.html?mood=sweet" class="mood-card mood-sweet">
+          <div class="mood-card-top">
+            <div class="mood-card-header mood-underline">
+              <span class="mood-dot"></span>
+              <h3 class="mood-card-title">Sweet</h3>
+            </div>
+            <p class="mood-card-desc">ความหอมละมุนนุ่มนวลที่แฝงด้วยความอบอุ่น อ่อนโยน และน่าทะนุถนอมในทุกสัมผัส</p>
+          </div>
+          <span class="mood-card-link">สำรวจกลิ่น Sweet &rarr;</span>
+        </a>
+
+        <!-- Mood 3: Confident -->
+        <a href="product.html?mood=confident" class="mood-card mood-confident">
+          <div class="mood-card-top">
+            <div class="mood-card-header mood-underline">
+              <span class="mood-dot"></span>
+              <h3 class="mood-card-title">Confident</h3>
+            </div>
+            <p class="mood-card-desc">กลิ่นอายที่สุขุม ลุ่มลึก และสง่างาม สะท้อนตัวตนที่มั่นใจและมีรสนิยมอย่างเป็นธรรมชาติ</p>
+          </div>
+          <span class="mood-card-link">สำรวจกลิ่น Confident &rarr;</span>
+        </a>
+
+        <!-- Mood 4: Romance -->
+        <a href="product.html?mood=romance" class="mood-card mood-romance">
+          <div class="mood-card-top">
+            <div class="mood-card-header mood-underline">
+              <span class="mood-dot"></span>
+              <h3 class="mood-card-title">Romance</h3>
+            </div>
+            <p class="mood-card-desc">เสน่ห์อันเย้ายวนที่นุ่มลึกและน่าจดจำ สร้างบรรยากาศแห่งความโรแมนติกที่ตราตรึงใจ</p>
+          </div>
+          <span class="mood-card-link">สำรวจกลิ่น Romance &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-brand">Melon Soap</div>
+      <p class="footer-note">&copy; 2026 Melon Soap. Minimalist Botanical Care.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

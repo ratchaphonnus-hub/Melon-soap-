@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order — Melon Soap</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .order-container {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    .order-card {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      padding: 3.5rem 3rem;
+    }
+
+    textarea.form-control {
+      resize: vertical;
+      min-height: 80px;
+      line-height: 1.6;
+    }
+
+    .order-submit-wrap {
+      margin-top: 2.75rem;
+      text-align: center;
+    }
+
+    .order-submit-wrap .btn {
+      width: 100%;
+    }
+
+    @media (max-width: 600px) {
+      .order-card {
+        padding: 2.25rem 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="brand-logo">Melon Soap</a>
+      <ul class="nav-links">
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="product.html">สินค้าทั้งหมด</a></li>
+        <li><a href="order.html">สั่งซื้อ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Order Section -->
+  <main class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Private Order</span>
+        <h1>รายละเอียดการสั่งซื้อ</h1>
+      </div>
+
+      <div class="order-container">
+        <div class="order-card">
+          <form id="orderForm">
+            <div class="form-group">
+              <label for="customerName" class="form-label">ชื่อลูกค้า *</label>
+              <input type="text" id="customerName" class="form-control" placeholder="ระบุชื่อ-นามสกุลผู้รับ" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact" class="form-label">เบอร์โทร / Line *</label>
+              <input type="text" id="contact" class="form-control" placeholder="ระบุเบอร์โทรศัพท์ หรือ Line ID" required>
+            </div>
+
+            <div class="form-group">
+              <label for="items" class="form-label">รายการสินค้า *</label>
+              <input type="text" id="items" class="form-control" placeholder="เช่น Melon Soap Fresh (80g)" required>
+            </div>
+
+            <div class="form-group">
+              <label for="total" class="form-label">จำนวนเงินรวม (บาท) *</label>
+              <input type="number" id="total" class="form-control" placeholder="0" min="0" step="any" required>
+            </div>
+
+            <div class="form-group">
+              <label for="note" class="form-label">หมายเหตุ / ที่อยู่จัดส่ง</label>
+              <textarea id="note" class="form-control" placeholder="ระบุที่อยู่จัดส่ง หรือข้อความเพิ่มเติมถึงร้านค้า"></textarea>
+            </div>
+
+            <div class="order-submit-wrap">
+              <button type="submit" class="btn btn-solid">ยืนยันสั่งซื้อ</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-brand">Melon Soap</div>
+      <p class="footer-note">&copy; 2026 Melon Soap. Minimalist Botanical Care.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

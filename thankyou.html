@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You — Melon Soap</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .thankyou-wrap {
+      min-height: calc(100vh - 220px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 4rem 0;
+    }
+
+    .thankyou-card {
+      max-width: 560px;
+      margin: 0 auto;
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      padding: 4rem 3rem;
+    }
+
+    .thankyou-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: var(--mood-fresh);
+      margin: 0 auto 1.75rem;
+    }
+
+    .thankyou-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 4vw, 2.75rem);
+      margin-bottom: 1.25rem;
+    }
+
+    .thankyou-desc {
+      color: var(--text-secondary);
+      margin-bottom: 2.75rem;
+      line-height: 1.85;
+    }
+
+    @media (max-width: 600px) {
+      .thankyou-card {
+        padding: 3rem 1.75rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="brand-logo">Melon Soap</a>
+      <ul class="nav-links">
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="product.html">สินค้าทั้งหมด</a></li>
+        <li><a href="order.html">สั่งซื้อ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Thank You Section -->
+  <main class="thankyou-wrap">
+    <div class="container">
+      <div class="thankyou-card">
+        <div class="thankyou-dot"></div>
+        <span class="section-subtitle">Order Confirmed</span>
+        <h1 class="thankyou-title">ขอบคุณสำหรับคำสั่งซื้อ</h1>
+        <p class="thankyou-desc">
+          เราได้รับข้อมูลคำสั่งซื้อของคุณเรียบร้อยแล้ว ทีมงานจะดำเนินการตรวจสอบและติดต่อกลับโดยเร็วที่สุด
+        </p>
+        <a href="index.html" class="btn">กลับหน้าแรก</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-brand">Melon Soap</div>
+      <p class="footer-note">&copy; 2026 Melon Soap. Minimalist Botanical Care.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

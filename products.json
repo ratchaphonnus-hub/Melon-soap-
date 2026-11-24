@@ -1,0 +1,22 @@
+[
+  {
+    "id": "melon-soap-fresh",
+    "name": "Melon Soap Fresh",
+    "mood": "fresh",
+    "type": "spray",
+    "size": "80g",
+    "price": 89,
+    "image": "images/fresh.jpeg",
+    "description": "สบู่ล้างหน้าสูตรเมล่อน มอบสัมผัสสะอาดหมดจด คงความชุ่มชื้นให้ผิวเนียนนุ่มและสดชื่นอย่างเป็นธรรมชาติ"
+  },
+  {
+    "id": "melon-soap-bath",
+    "name": "Melon Soap Bath Soap",
+    "mood": "fresh",
+    "type": "rollon",
+    "size": "250ml",
+    "price": 129,
+    "image": "images/Bath soap.jpeg",
+    "description": "สบู่อาบน้ำสูตรเมล่อน มิ้น ผสานความเย็นสบายและกลิ่นหอมละมุน ช่วยปลอบประโลมและคืนความสดชื่นให้ผิวกาย"
+  }
+]
